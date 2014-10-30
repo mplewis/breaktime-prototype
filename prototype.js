@@ -18,6 +18,11 @@ var imageOrder = [
   'back-to-work'
 ];
 
+function preload(imgSrcUrl) {
+  var image = new Image();
+  image.src = imgSrcUrl;
+}
+
 function fitContent() {
   $('.phone').height($(window).height() * 0.85);
   $('.slide-num').css('font-size', $(window).height() * 0.05);
@@ -27,11 +32,14 @@ $(window).resize(function() {
   fitContent();
 });
 
+function imageUrl(pos) {
+  return 'images/' + imageOrder[pos] + '.png';
+}
+
 function showSlide(pos) {
-  var imageUrlBase = imageOrder[pos];
-  if (imageUrlBase) {
-    var imageUrl = 'images/' + imageUrlBase + '.png';
-    $('.phone').attr('src', imageUrl);
+  var slideUrl = imageUrl(pos);
+  if (slideUrl) {
+    $('.phone').attr('src', slideUrl);
     $('.slide-num').text(pos);
   }
 }
@@ -69,3 +77,7 @@ $(document).keydown(function(e) {
 
 showSlide(pos);
 fitContent();
+
+for (var i = 0; i < imageOrder.length; i++) {
+  preload(imageUrl(i));
+}

@@ -1,0 +1,16 @@
+body {
+  color: #333;
+  background-color: #aaa;
+  margin-top: 20px;
+}
+
+.content {
+  text-align: center;
+}
+
+.slide-num {
+  display: block;
+  font-family: "Gill Sans", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 72px;
+  font-weight: 300;
+}

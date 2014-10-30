@@ -11,7 +11,7 @@ var imageOrder = [
   'back-to-work',
   'set-mins-left-25',
   'set-mins-left-10',
-  'mins-left-25',
+  'mins-left-10',
   'nexus-back',
   'choose-break-activity',
   'device-home',

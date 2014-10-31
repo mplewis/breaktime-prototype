@@ -16,8 +16,8 @@ var imageOrder = [
   'nexus-back',
   'choose-break-activity',
   'device-home',
-  'back-to-work'
-  'device-home',
+  'back-to-work',
+  'device-home'
 ];
 
 function preload(imgSrcUrl) {

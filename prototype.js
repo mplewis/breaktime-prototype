@@ -9,6 +9,7 @@ var imageOrder = [
   'choose-break-activity',
   'music-activity',
   'back-to-work',
+  'mins-left-25',
   'set-mins-left-25',
   'set-mins-left-10',
   'mins-left-10',

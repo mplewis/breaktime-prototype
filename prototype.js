@@ -17,6 +17,7 @@ var imageOrder = [
   'choose-break-activity',
   'device-home',
   'back-to-work'
+  'device-home',
 ];
 
 function preload(imgSrcUrl) {
